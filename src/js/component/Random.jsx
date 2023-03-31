@@ -1,11 +1,11 @@
 import React from "react";
 
-const Random = (props) => {
-    const randomValue = Math.floor(Math.random() * props.max + props.min);
+const Random = ({min, max}) => {
+    const randomValue = Math.floor(Math.random() * max + min);
   
     return (
       <p>
-        Random value between {props.min} and {props.max} =&gt; {randomValue}
+        Random value between {min} and {max} =&gt; {randomValue}
       </p>
     );
   };
