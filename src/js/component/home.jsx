@@ -3,6 +3,7 @@ import Greetings from "./Greetings.jsx";
 import Random from "./Random.jsx";
 import MyButton from "./MyButton.jsx";
 import BoxColor from "./BoxColor.jsx";
+import LikeButton from "./LikeButton.jsx";
 
 function Wrap({ children }) {
   return (
@@ -36,6 +37,11 @@ const Home = () => {
       <MyButton type="info">Click me!</MyButton>
       <MyButton>Save changes </MyButton>
       <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={23} g={45} b={44} />
+
+      <LikeButton />
+      <LikeButton />
+      
     </div>
   );
 };
