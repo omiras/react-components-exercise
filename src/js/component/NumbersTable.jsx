@@ -4,10 +4,6 @@ import PropTypes from 'prop-types';
 
 export default function NumbersTable({ limit, color = 'red' }) {
  
-  if (limit <= 0) {
-    throw new RangeError('The limit number must be greather than 0.');
-  }
-
   const numbers = new Array(limit).fill(0);
   
   return (
