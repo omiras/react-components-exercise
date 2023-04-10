@@ -3,7 +3,7 @@ import React from "react";
 export default function NumbersTable({ limit }) {
  
   const numbers = new Array(limit).fill(0);
-  
+
   return (
     <div className="row">
       {numbers.map((n, index) => (
